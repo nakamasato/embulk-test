@@ -1,14 +1,3 @@
-INSERT INTO from_table
-    (name)
-VALUES
-    ('dog'),
-    ('cat'),
-    ('penguin'),
-    ('lax'),
-    ('whale'),
-    ('ostrich');
-
-
 DELIMITER $$
 CREATE PROCEDURE generate_data()
 BEGIN
