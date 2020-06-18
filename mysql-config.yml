@@ -1,0 +1,17 @@
+in:
+  type: mysql
+  host: from_mysql
+  user: from_user
+  password: "from_password"
+  database: from_db
+  table: from_table
+  select: "*"
+
+out:
+  type: mysql
+  host: to_mysql
+  user: to_user
+  password: "to_password"
+  database: to_db
+  table: to_table
+  mode: insert

@@ -1,0 +1,23 @@
+version: "3.3"
+services:
+  from_mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_USER: from_user
+      MYSQL_PASSWORD: from_password
+      MYSQL_ROOT_PASSWORD: from_password
+      MYSQL_DATABASE: from_db
+    volumes:
+      - ./data/from_data.sql:/docker-entrypoint-initdb.d/from_data.sql
+
+  to_mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_USER: to_user
+      MYSQL_PASSWORD: to_password
+      MYSQL_ROOT_PASSWORD: to_password
+      MYSQL_DATABASE: to_db
+
+networks:
+  default:
+    name: embulk_test
