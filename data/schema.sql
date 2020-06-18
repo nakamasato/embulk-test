@@ -7,7 +7,3 @@ CREATE TABLE `from_table` (
      name CHAR(30) NOT NULL,
      PRIMARY KEY (id)
 )
-
-INSERT INTO from_table (name) VALUES
-  ('dog'),('cat'),('penguin'),
-  ('lax'),('whale'),('ostrich');
